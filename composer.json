@@ -1,0 +1,54 @@
+{
+    "name": "webdcg/laravel-geonames",
+    "description": "Laravel GeoNames",
+    "keywords": [
+        "webdcg",
+        "laravel-geonames"
+    ],
+    "homepage": "https://github.com/webdcg/laravel-geonames",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Roberto Luna Rojas",
+            "email": "rluna@webdcg.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webdcg\\LaravelGeonames\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webdcg\\LaravelGeonames\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webdcg\\LaravelGeonames\\LaravelGeonamesServiceProvider"
+            ],
+            "aliases": {
+                "LaravelGeonames": "Webdcg\\LaravelGeonames\\LaravelGeonamesFacade"
+            }
+        }
+    }
+}
