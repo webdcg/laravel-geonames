@@ -24,6 +24,7 @@
         "illuminate/support": "5.8.*"
     },
     "require-dev": {
+        "nunomaduro/larastan": "^0.3.18",
         "orchestra/testbench": "3.8.*",
         "phpunit/phpunit": "^7.0"
     },
@@ -39,8 +40,8 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "analyse": "vendor/bin/phpstan analyse"
     },
     "config": {
         "sort-packages": true
