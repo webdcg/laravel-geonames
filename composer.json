@@ -27,6 +27,7 @@
         "friendsofphp/php-cs-fixer": "^2.15",
         "mnapoli/pretty": "^1.0",
         "nunomaduro/larastan": "^0.3.18",
+        "nunomaduro/phpinsights": "^1.7",
         "orchestra/testbench": "3.8.*",
         "phpunit/phpunit": "^7.0"
     },
@@ -41,7 +42,10 @@
         }
     },
     "scripts": {
-        "analyse": "vendor/bin/phpstan analyse",
+        "analyse": [
+            "vendor/bin/phpstan analyse",
+            "vendor/bin/phpinsights"
+        ],
         "format": "vendor/bin/php-cs-fixer fix",
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
