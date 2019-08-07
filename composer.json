@@ -3,7 +3,11 @@
     "description": "Laravel GeoNames",
     "keywords": [
         "webdcg",
-        "laravel-geonames"
+        "laravel-geonames",
+        "laravel",
+        "geonames",
+        "geo",
+        "location"
     ],
     "homepage": "https://github.com/webdcg/laravel-geonames",
     "license": "MIT",
